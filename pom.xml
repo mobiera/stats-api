@@ -6,11 +6,11 @@
 
   <groupId>com.mobiera.commons</groupId>
   <artifactId>stats-api</artifactId>
-  <version>2.2-SNAPSHOT</version>
+  <version>2.4</version>
   <packaging>jar</packaging>
   <name>Stats API</name>
    <description>Library for using Mobiera Stats Container</description>
-   <url>https://github.com/mobiera/mobiera-commons</url>
+   <url>https://github.com/mobiera/stats-api</url>
    <licenses>
       <license>
          <name>The Apache License, Version 2.0</name>

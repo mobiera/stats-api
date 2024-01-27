@@ -7,11 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
 @JsonInclude(Include.NON_NULL)
 public class Kpi  implements Serializable{
 	
@@ -19,7 +15,6 @@ public class Kpi  implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -6094857915773645178L;
-	private String entityId;
 	private Long entityFk;
 	private String entityClass;
 	private String label;
@@ -27,5 +22,38 @@ public class Kpi  implements Serializable{
 	@JsonSerialize(using = StatEnumSerializer.class)
 	private StatEnum stat;
 	private String type;
+	
+	public Long getEntityFk() {
+		return entityFk;
+	}
+	public void setEntityFk(Long entityFk) {
+		this.entityFk = entityFk;
+	}
+	public String getEntityClass() {
+		return entityClass;
+	}
+	public void setEntityClass(String entityClass) {
+		this.entityClass = entityClass;
+	}
+	
+	public String getLabel() {
+		return label;
+	}
+	public void setLabel(String label) {
+		this.label = label;
+	}
+	public StatEnum getStat() {
+		return stat;
+	}
+	public void setStat(StatEnum stat) {
+		this.stat = stat;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
 	
 }

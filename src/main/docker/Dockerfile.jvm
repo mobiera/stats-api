@@ -1,0 +1,11 @@
+FROM registry.access.redhat.com/ubi8/openjdk-17:1.14
+
+ENV LANGUAGE='en_US:en'
+
+WORKDIR /app
+
+COPY target/*-SNAPSHOT.jar /app/
+
+EXPOSE 8080
+ARG JAR_FILE=target/*-SNAPSHOT.jar
+CMD ["java", "-jar", "${JAR_FILE}"]

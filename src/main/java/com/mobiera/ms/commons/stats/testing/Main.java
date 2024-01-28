@@ -12,7 +12,7 @@ public class Main {
 		String data = " { "+
 				 " \"from\": \"2022-03-14T08:30:41.206Z\","+
 				 " \"to\": \"2022-03-14T08:30:41.206Z\","+
-				 " \"entityFks\": ["+
+				 " \"entityIds\": ["+
 				 "   0"+
 				 " ],"+
 				 " \"statClass\": \"SMPP_ACCOUNT\","+
